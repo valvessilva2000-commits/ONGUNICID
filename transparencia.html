@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência | ONG Mãos que Ajudam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600">ONG Mãos que Ajudam</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600">Início</a>
+                <a href="sobre.html" class="text-gray-600 hover:text-teal-600">Sobre Nós</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-teal-600">Projetos</a>
+                <a href="voluntariado.html" class="text-gray-600 hover:text-teal-600">Voluntariado</a>
+                <a href="doacoes.html" class="text-gray-600 hover:text-teal-600">Doações</a>
+                <a href="transparencia.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">Transparência</a>
+                <a href="blog.html" class="text-gray-600 hover:text-teal-600">Blog</a>
+                <a href="contato.html" class="text-gray-600 hover:text-teal-600">Contato</a>
+            </div>
+             <a href="doacoes.html" class="hidden md:block bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300">
+                Doe Agora
+            </a>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Início</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Sobre Nós</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Projetos</a>
+            <a href="voluntariado.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Voluntariado</a>
+            <a href="doacoes.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Doações</a>
+            <a href="transparencia.html" class="block py-2 px-4 text-sm bg-gray-100 text-teal-600">Transparência</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Blog</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-16">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800">Nosso Compromisso com a Transparência</h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Acreditamos que a confiança é a base do nosso trabalho. Aqui você encontra nossos relatórios, dados financeiros e o impacto de cada real doado.</p>
+        </header>
+
+        <!-- Seção de Gráficos -->
+        <section class="space-y-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-center mb-6">Distribuição de Recursos por Projeto (2024)</h2>
+                <div class="max-w-md mx-auto">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-center mb-6">Evolução de Voluntários (2020-2024)</h2>
+                 <div class="max-w-3xl mx-auto">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-center mb-6">Impacto Social por Região (Pessoas Atendidas)</h2>
+                 <div class="max-w-3xl mx-auto">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Relatórios -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Relatórios e Documentos</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b-2 border-gray-200">
+                            <th class="py-2">Documento</th>
+                            <th class="py-2 text-center">Ano</th>
+                            <th class="py-2 text-right">Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4">Relatório Anual de Atividades</td>
+                            <td class="py-4 text-center">2024</td>
+                            <td class="py-4 text-right"><a href="#" class="text-teal-600 hover:underline"><i class="fas fa-file-pdf text-xl"></i> PDF</a></td>
+                        </tr>
+                         <tr class="border-b border-gray-100">
+                            <td class="py-4">Balanço Financeiro</td>
+                            <td class="py-4 text-center">2024</td>
+                            <td class="py-4 text-right"><a href="#" class="text-teal-600 hover:underline"><i class="fas fa-file-excel text-xl"></i> XLS</a></td>
+                        </tr>
+                         <tr class="border-b border-gray-100">
+                            <td class="py-4">Estatuto Social</td>
+                            <td class="py-4 text-center">Atualizado</td>
+                            <td class="py-4 text-right"><a href="#" class="text-teal-600 hover:underline"><i class="fas fa-file-pdf text-xl"></i> PDF</a></td>
+                        </tr>
+                         <tr>
+                            <td class="py-4">Certificado de Utilidade Pública</td>
+                            <td class="py-4 text-center">Vigente</td>
+                            <td class="py-4 text-right"><a href="#" class="text-teal-600 hover:underline"><i class="fas fa-file-image text-xl"></i> JPG</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Script para menu mobile
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Gráficos
+            const pieCtx = document.getElementById('pieChart');
+            if (pieCtx) {
+                new Chart(pieCtx.getContext('2d'), {
+                    type: 'pie',
+                    data: {
+                        labels: ['Educação (45%)', 'Saúde (25%)', 'Geração de Renda (20%)', 'Administrativo (10%)'],
+                        datasets: [{
+                            data: [45, 25, 20, 10],
+                            backgroundColor: ['#14b8a6', '#f87171', '#fbbf24', '#a78bfa'],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: { responsive: true, plugins: { legend: { position: 'top' } } }
+                });
+            }
+
+            const lineCtx = document.getElementById('lineChart');
+            if (lineCtx) {
+                new Chart(lineCtx.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: ['2020', '2021', '2022', '2023', '2024'],
+                        datasets: [{
+                            label: 'Número de Voluntários',
+                            data: [120, 180, 250, 350, 510],
+                            fill: false,
+                            borderColor: '#14b8a6',
+                            tension: 0.1
+                        }]
+                    },
+                     options: { responsive: true, scales: { y: { beginAtZero: true } } }
+                });
+            }
+
+            const barCtx = document.getElementById('barChart');
+            if (barCtx) {
+                new Chart(barCtx.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Zona Leste', 'Zona Norte', 'Zona Sul', 'Centro', 'Zona Oeste'],
+                        datasets: [{
+                            label: 'Pessoas Atendidas',
+                            data: [4500, 2200, 1800, 500, 1000],
+                            backgroundColor: ['#14b8a6', '#f87171', '#fbbf24', '#a78bfa', '#60a5fa']
+                        }]
+                    },
+                    options: { responsive: true, scales: { y: { beginAtZero: true } }, plugins: { legend: { display: false } } }
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

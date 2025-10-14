@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | ONG Mãos que Ajudam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600">ONG Mãos que Ajudam</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600">Início</a>
+                <a href="sobre.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">Sobre Nós</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-teal-600">Projetos</a>
+                <a href="voluntariado.html" class="text-gray-600 hover:text-teal-600">Voluntariado</a>
+                <a href="doacoes.html" class="text-gray-600 hover:text-teal-600">Doações</a>
+                <a href="transparencia.html" class="text-gray-600 hover:text-teal-600">Transparência</a>
+                <a href="blog.html" class="text-gray-600 hover:text-teal-600">Blog</a>
+                <a href="contato.html" class="text-gray-600 hover:text-teal-600">Contato</a>
+            </div>
+             <a href="doacoes.html" class="hidden md:block bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300">
+                Doe Agora
+            </a>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Início</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm bg-gray-100 text-teal-600">Sobre Nós</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Projetos</a>
+            <a href="voluntariado.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Voluntariado</a>
+            <a href="doacoes.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Doações</a>
+            <a href="transparencia.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Transparência</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Blog</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-16">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800">Nossa História de Impacto</h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Conheça a jornada da ONG Mãos que Ajudam, nossos valores e as pessoas que movem nossa causa.</p>
+        </header>
+
+        <!-- Seção Nossa História -->
+        <section class="flex flex-col md:flex-row items-center gap-12 mb-16">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">Nascemos de um Sonho</h2>
+                <p class="text-gray-600 mb-4">A ONG Mãos que Ajudam foi fundada em 2010 por um grupo de amigos que acreditavam no poder da educação para transformar realidades. O que começou com aulas de reforço em uma garagem, hoje se tornou uma organização que impacta milhares de vidas em diversas frentes.</p>
+                <p class="text-gray-600">Nossa missão é promover o desenvolvimento humano e social de comunidades em situação de vulnerabilidade, através de ações integradas de educação, saúde e geração de renda.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="imagens/fundador.jpg" alt="Foto do fundador" style="width:100%; border-radius: 8px; margin-top: 1rem;">
+            </div>
+        </section>
+
+        <!-- Seção Missão, Visão e Valores -->
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-lg mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <i class="fas fa-bullseye text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Missão</h3>
+                    <p class="text-gray-600">Promover o desenvolvimento integral de indivíduos e comunidades vulneráveis.</p>
+                </div>
+                <div>
+                    <i class="fas fa-eye text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Visão</h3>
+                    <p class="text-gray-600">Ser referência em transformação social, construindo uma sociedade mais justa e igualitária.</p>
+                </div>
+                <div>
+                    <i class="fas fa-heart text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Valores</h3>
+                    <p class="text-gray-600">Empatia, Transparência, Comprometimento, Inovação e Respeito.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeo Institucional -->
+        <section class="text-center mb-16">
+             <h2 class="text-3xl font-bold mb-8">Conheça Mais Sobre Nosso Trabalho</h2>
+             <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
+                 <iframe 
+                    class="rounded-lg shadow-lg"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/watch?v=OIijoOqGbZI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+             </div>
+        </section>
+
+        <!-- Seção de Depoimentos em Áudio -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Vozes que Inspiram</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">Maria S., Beneficiária</h3>
+                        <p class="text-gray-600 italic mb-4">"O curso de corte e costura mudou minha vida. Hoje tenho minha própria fonte de renda."</p>
+                        <audio controls class="w-full">
+                            <source src="audio/depoimento1.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </article>
+                     <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">João P., Voluntário</h3>
+                        <p class="text-gray-600 italic mb-4">"Ser voluntário aqui me ensinou mais do que eu jamais poderia ensinar. É gratificante."</p>
+                        <audio controls class="w-full">
+                            <source src="audio/depoimento2.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </article>
+                     <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">Ana C., Mãe de Aluno</h3>
+                        <p class="text-gray-600 italic mb-4">"Meu filho melhorou muito na escola depois que começou a frequentar o reforço."</p>
+                        <audio controls class="w-full">
+                            <source src="audio/depoimento3.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (simplificado para o exemplo) -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in text-2xl"></i></a>
+            </div>
+            <p>© 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

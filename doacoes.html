@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações | ONG Mãos que Ajudam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600">ONG Mãos que Ajudam</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600">Início</a>
+                <a href="sobre.html" class="text-gray-600 hover:text-teal-600">Sobre Nós</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-teal-600">Projetos</a>
+                <a href="voluntariado.html" class="text-gray-600 hover:text-teal-600">Voluntariado</a>
+                <a href="doacoes.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">Doações</a>
+                <a href="transparencia.html" class="text-gray-600 hover:text-teal-600">Transparência</a>
+                <a href="blog.html" class="text-gray-600 hover:text-teal-600">Blog</a>
+                <a href="contato.html" class="text-gray-600 hover:text-teal-600">Contato</a>
+            </div>
+             <a href="doacoes.html" class="hidden md:block bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300">
+                Doe Agora
+            </a>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Início</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Sobre Nós</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Projetos</a>
+            <a href="voluntariado.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Voluntariado</a>
+            <a href="doacoes.html" class="block py-2 px-4 text-sm bg-gray-100 text-teal-600">Doações</a>
+            <a href="transparencia.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Transparência</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Blog</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-16">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800">Sua Doação Transforma</h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Cada contribuição, não importa o valor, nos ajuda a continuar nosso trabalho e a expandir nosso impacto.</p>
+        </header>
+
+        <!-- Seção de Métodos de Doação -->
+        <section class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Doação via PIX -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <i class="fas fa-qrcode text-6xl text-teal-500 mb-4"></i>
+                <h2 class="text-2xl font-bold mb-2">Doe com PIX</h2>
+                <p class="text-gray-600 mb-4">A forma mais rápida e segura de ajudar. Aponte a câmera do seu celular para o QR Code ou use nossa chave.</p>
+                <img src="imagens/qrcode.png" alt="[QR Code para doação via PIX]" class="mx-auto my-4 border-4 border-gray-200 rounded-md">
+                <p class="font-semibold">Chave PIX (CNPJ):</p>
+                <p class="text-lg bg-gray-100 p-2 rounded-md">12.345.678/0001-99</p>
+            </div>
+
+            <!-- Doação via Transferência Bancária -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <i class="fas fa-university text-6xl text-teal-500 mb-4"></i>
+                <h2 class="text-2xl font-bold mb-2">Transferência Bancária</h2>
+                <p class="text-gray-600 mb-4">Você também pode doar diretamente para nossa conta bancária.</p>
+                <div class="text-left bg-gray-100 p-4 rounded-md space-y-2 mt-10">
+                    <p><span class="font-semibold">Banco:</span> Banco Fictício S.A. (000)</p>
+                    <p><span class="font-semibold">Agência:</span> 1234</p>
+                    <p><span class="font-semibold">Conta Corrente:</span> 56789-0</p>
+                    <p><span class="font-semibold">Nome:</span> ONG Mãos que Ajudam</p>
+                    <p><span class="font-semibold">CNPJ:</span> 12.345.678/0001-99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "O que sua doação faz" -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Veja o Impacto da Sua Contribuição</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-teal-50 border border-teal-200 rounded-lg">
+                    <h3 class="text-2xl font-bold text-teal-700">R$ 50</h3>
+                    <p class="text-gray-600 mt-2">Garante o material escolar completo para uma criança por um semestre.</p>
+                </div>
+                <div class="text-center p-6 bg-teal-50 border border-teal-200 rounded-lg">
+                    <h3 class="text-2xl font-bold text-teal-700">R$ 100</h3>
+                    <p class="text-gray-600 mt-2">Fornece uma cesta básica para uma família em situação de necessidade.</p>
+                </div>
+                <div class="text-center p-6 bg-teal-50 border border-teal-200 rounded-lg">
+                    <h3 class="text-2xl font-bold text-teal-700">R$ 250</h3>
+                    <p class="text-gray-600 mt-2">Custeia um mês de aulas de música para um jovem talento da comunidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doação de Itens -->
+        <section class="text-center bg-white p-8 md:p-12 rounded-lg shadow-lg">
+             <h2 class="text-3xl font-bold mb-4">Outras Formas de Ajudar</h2>
+             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Sua ajuda não precisa ser financeira. Aceitamos doações de alimentos não perecíveis, roupas em bom estado, material escolar e brinquedos. Entre em <a href="contato.html" class="text-teal-600 font-semibold hover:underline">contato</a> para saber os pontos de coleta.</p>
+             <a href="contato.html" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-teal-700 transition duration-300">Fale Conosco</a>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

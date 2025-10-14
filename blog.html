@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ONG Mãos que Ajudam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600">ONG Mãos que Ajudam</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600">Início</a>
+                <a href="sobre.html" class="text-gray-600 hover:text-teal-600">Sobre Nós</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-teal-600">Projetos</a>
+                <a href="voluntariado.html" class="text-gray-600 hover:text-teal-600">Voluntariado</a>
+                <a href="doacoes.html" class="text-gray-600 hover:text-teal-600">Doações</a>
+                <a href="transparencia.html" class="text-gray-600 hover:text-teal-600">Transparência</a>
+                <a href="blog.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">Blog</a>
+                <a href="contato.html" class="text-gray-600 hover:text-teal-600">Contato</a>
+            </div>
+             <a href="doacoes.html" class="hidden md:block bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300">
+                Doe Agora
+            </a>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Início</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Sobre Nós</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Projetos</a>
+            <a href="voluntariado.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Voluntariado</a>
+            <a href="doacoes.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Doações</a>
+            <a href="transparencia.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Transparência</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm bg-gray-100 text-teal-600">Blog</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-16">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800">Nosso Blog</h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Acompanhe as últimas notícias, histórias inspiradoras e artigos sobre o impacto social do nosso trabalho.</p>
+        </header>
+
+        <!-- Grade de Posts -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Post 1 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="#">
+                    <img src="imagens/festajunina.jpg" alt="[Crianças dançando em uma festa junina]" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6 flex-grow">
+                    <div class="text-sm text-gray-500 mb-2">
+                        <span><i class="fas fa-calendar-alt mr-1"></i> 15 de Junho, 2025</span> | 
+                        <span><i class="fas fa-tag mr-1"></i> Eventos</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2"><a href="#" class="hover:text-teal-600">Festa Junina Solidária Arrecada Fundos para Projeto Educacional</a></h2>
+                    <p class="text-gray-600">Nossa tradicional festa junina foi um sucesso! Com a ajuda da comunidade, arrecadamos o suficiente para equipar nossa nova sala de informática...</p>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#" class="text-teal-600 font-semibold hover:underline">Leia Mais →</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+             <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="#">
+                    <img src="imagens/saude.png" alt="[Voluntários médicos atendendo a comunidade]" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6 flex-grow">
+                    <div class="text-sm text-gray-500 mb-2">
+                        <span><i class="fas fa-calendar-alt mr-1"></i> 28 de Maio, 2025</span> | 
+                        <span><i class="fas fa-tag mr-1"></i> Saúde</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2"><a href="#" class="hover:text-teal-600">Mutirão de Saúde Atende Mais de 300 Pessoas na Comunidade</a></h2>
+                    <p class="text-gray-600">Em parceria com médicos voluntários, realizamos um grande mutirão de saúde, oferecendo consultas, exames básicos e orientação sobre prevenção...</p>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#" class="text-teal-600 font-semibold hover:underline">Leia Mais →</a>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+             <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="#">
+                    <img src="imagens/voluntaria.png" alt="[Rosto sorridente de uma voluntária]" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6 flex-grow">
+                    <div class="text-sm text-gray-500 mb-2">
+                        <span><i class="fas fa-calendar-alt mr-1"></i> 10 de Maio, 2025</span> | 
+                        <span><i class="fas fa-tag mr-1"></i> Voluntariado</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2"><a href="#" class="hover:text-teal-600">A História de Carla: Como o Voluntariado Transformou Minha Visão de Mundo</a></h2>
+                    <p class="text-gray-600">Conheça a história de Carla, nossa voluntária do mês, que compartilha como a experiência de ensinar crianças mudou sua vida para sempre...</p>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#" class="text-teal-600 font-semibold hover:underline">Leia Mais →</a>
+                </div>
+            </article>
+            
+            <!-- Post 4 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="#">
+                    <img src="imagens/formatura.png" alt="[Jovens formandos de um curso profissionalizante]" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-6 flex-grow">
+                    <div class="text-sm text-gray-500 mb-2">
+                        <span><i class="fas fa-calendar-alt mr-1"></i> 22 de Abril, 2025</span> | 
+                        <span><i class="fas fa-tag mr-1"></i> Geração de Renda</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2"><a href="#" class="hover:text-teal-600">Nova Turma do Curso de Panificação se Forma e Inicia Empreendimentos</a></h2>
+                    <p class="text-gray-600">Celebramos a formatura de mais 20 alunos do nosso curso de panificação. Muitos já estão vendendo seus produtos e gerando renda para suas famílias...</p>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#" class="text-teal-600 font-semibold hover:underline">Leia Mais →</a>
+                </div>
+            </article>
+
+            <!-- Adicione mais posts aqui -->
+
+        </section>
+
+        <!-- Paginação -->
+        <nav class="mt-16 flex justify-center">
+            <ul class="flex items-center -space-x-px h-10 text-base">
+                <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">
+                        <span class="sr-only">Anterior</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-current="page" class="z-10 flex items-center justify-center px-4 h-10 leading-tight text-teal-600 border border-teal-300 bg-teal-50 hover:bg-teal-100 hover:text-teal-700">1</a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">
+                        <span class="sr-only">Próximo</span>
+                         <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
