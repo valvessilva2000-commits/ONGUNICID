@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Mãos que Ajudam | Início</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Importa a configuração do Tailwind que criamos
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { 'primary': { '50': '#f0f9ff', '100': '#e0f2fe', '200': '#bae6fd', '300': '#7dd3fc', '400': '#38bdf8', '500': '#0ea5e9', '600': '#0284c7', '700': '#0369a1', '800': '#075985', '900': '#0c4a6e' }, 'secondary': { '500': '#f59e0b', '600': '#d97706' }, 'neutral': { '50': '#f8fafc', '100': '#f1f5f9', '200': '#e2e8f0', '300': '#cbd5e1', '400': '#94a3b8', '500': '#64748b', '600': '#475569', '700': '#334155', '800': '#1e293b', '900': '#0f172a' }, 'feedback': { 'success': '#10b981', 'error': '#ef4444', 'warning': '#f97316' } },
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            fontSize: { 'h1': ['3.75rem', { lineHeight: '1.1', fontWeight: '700' }], 'h2': ['2.25rem', { lineHeight: '1.2', fontWeight: '700' }], 'h3': ['1.5rem', { lineHeight: '1.3', fontWeight: '600' }], 'h4': ['1.125rem', { lineHeight: '1.4', fontWeight: '600' }], 'body': ['1rem', { lineHeight: '1.6', fontWeight: '400' }], 'small': ['0.875rem', { lineHeight: '1.5', fontWeight: '400' }] },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS customizado mínimo, a maior parte está no Tailwind */
+        .hero-bg { background-image: url('https://placehold.co/1920x800/334155/e2e8f0?text=Crianças+Sorrindo'); }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .group:disabled { opacity: 0.5; cursor: not-allowed; }
+    </style>
+</head>
+<body class="bg-neutral-100 text-neutral-700 font-sans text-body">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary-600">ONG Mãos que Ajudam</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                 <a href="index.html" class="text-primary-600 font-semibold border-b-2 border-primary-600">Início</a>
+                 <a href="sobre.html" class="text-neutral-600 hover:text-primary-600">Sobre Nós</a>
+                 <div class="relative dropdown">
+                     <a href="projetos.html" class="text-neutral-600 hover:text-primary-600">Projetos <i class="fas fa-chevron-down text-xs"></i></a>
+                     <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+                         <a href="projetos.html#educacao" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Educação</a>
+                         <a href="projetos.html#saude" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Saúde</a>
+                         <a href="projetos.html#renda" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Geração de Renda</a>
+                     </div>
+                 </div>
+                 <a href="voluntariado.html" class="text-neutral-600 hover:text-primary-600">Voluntariado</a>
+                 <a href="doacoes.html" class="text-neutral-600 hover:text-primary-600">Doações</a>
+                 <a href="transparencia.html" class="text-neutral-600 hover:text-primary-600">Transparência</a>
+                 <a href="blog.html" class="text-neutral-600 hover:text-primary-600">Blog</a>
+                 <a href="contato.html" class="text-neutral-600 hover:text-primary-600">Contato</a>
+            </div>
+             <a href="doacoes.html" class="hidden md:block bg-primary-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-primary-600 transition duration-300">
+                Doe Agora
+            </a>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div class="hidden md:hidden" id="mobile-menu">
+             <a href="index.html" class="block py-2 px-4 text-small bg-neutral-100 text-primary-600">Início</a>
+             <a href="sobre.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Sobre Nós</a>
+             <a href="projetos.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Projetos</a>
+             <a href="voluntariado.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Voluntariado</a>
+             <a href="doacoes.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Doações</a>
+             <a href="transparencia.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Transparência</a>
+             <a href="blog.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Blog</a>
+             <a href="contato.html" class="block py-2 px-4 text-small hover:bg-neutral-100">Contato</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-bg bg-cover bg-center text-white">
+            <div class="bg-black bg-opacity-50 min-h-[60vh] flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-h1 mb-4">Transformando Vidas, Construindo Futuros</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Junte-se a nós para levar esperança e oportunidade para comunidades carentes.</p>
+                    <div>
+                        <a href="projetos.html" class="bg-primary-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-600 transition duration-300 text-lg mr-4">Nossos Projetos</a>
+                        <a href="voluntariado.html" class="bg-white text-primary-600 font-bold py-3 px-6 rounded-lg hover:bg-neutral-200 transition duration-300 text-lg">Seja Voluntário</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-h2 text-center text-neutral-800 mb-12">Projetos em Destaque</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="imagens/projeto.png" alt="Crianças em uma sala de aula sorrindo" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <div class="mb-4">
+                                <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Educação</span>
+                                <span class="bg-secondary-500 text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Novo</span>
+                            </div>
+                            <h3 class="text-h3 mb-2">Educação para Todos</h3>
+                            <p class="text-neutral-600 mb-4 flex-grow">Levamos reforço escolar e atividades culturais para crianças em áreas de vulnerabilidade social.</p>
+                            <a href="projetos.html#educacao" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="imagens/projeto1.png" alt="Profissional de saúde atendendo uma criança" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                           <div class="mb-4">
+                                <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Saúde</span>
+                            </div>
+                            <h3 class="text-h3 mb-2">Saúde na Comunidade</h3>
+                            <p class="text-neutral-600 mb-4 flex-grow">Promovemos campanhas de vacinação e atendimento médico básico em locais de difícil acesso.</p>
+                            <a href="projetos.html#saude" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                       <img src="imagens/projeto2.png" alt="Pessoa em um curso de geração de renda" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <div class="mb-4">
+                                <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Emprego</span>
+                            </div>
+                            <h3 class="text-h3 mb-2">Geração de Renda</h3>
+                            <p class="text-neutral-600 mb-4 flex-grow">Capacitamos adultos com cursos profissionalizantes para que possam empreender e prosperar.</p>
+                            <a href="projetos.html#renda" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-h2 text-center text-neutral-800 mb-12">Componentes de Interface</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-h3 mb-4">Botões com Estados</h3>
+                            <div class="flex items-center space-x-4">
+                               <button class="bg-primary-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-400 active:bg-primary-700">Padrão</button>
+                               <button class="bg-secondary-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-500">Secundário</button>
+                               <button class="group bg-neutral-300 text-neutral-500 font-bold py-2 px-4 rounded-lg" disabled>Desabilitado</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-h3 mb-4">Alertas de Feedback</h3>
+                            <div class="space-y-4">
+                                <div class="bg-feedback-success/20 border-l-4 border-feedback-success text-feedback-success p-4" role="alert">
+                                    <p class="font-bold">Sucesso!</p>
+                                    <p>Sua operação foi concluída.</p>
+                                </div>
+                                <div class="bg-feedback-error/20 border-l-4 border-feedback-error text-feedback-error p-4" role="alert">
+                                    <p class="font-bold">Erro!</p>
+                                    <p>Algo deu errado, tente novamente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div>
+                            <h3 class="text-h3 mb-4">Modal e Toast</h3>
+                            <div class="flex items-center space-x-4">
+                               <button id="open-modal-btn" class="bg-neutral-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-neutral-900">Abrir Modal</button>
+                               <button id="show-toast-btn" class="bg-neutral-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-neutral-900">Mostrar Toast</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                         <h3 class="text-h3 mb-4">Formulário com Validação</h3>
+                         <form action="#" class="bg-neutral-50 p-8 rounded-lg shadow-md space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-neutral-700 mb-1">Nome</label>
+                                <input type="text" id="name" required class="peer w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error invalid:text-feedback-error">
+                                <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, preencha seu nome.</p>
+                            </div>
+                             <div>
+                                <label for="email" class="block text-sm font-medium text-neutral-700 mb-1">E-mail</label>
+                                <input type="email" id="email" required class="peer w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error invalid:text-feedback-error">
+                                <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, insira um e-mail válido.</p>
+                            </div>
+                            <button type="submit" class="w-full bg-primary-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-600 transition duration-300">Enviar</button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-neutral-900 text-white pt-12">
+        <div class="container mx-auto px-6 text-center md:text-left">
+             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+               <div>
+                    <h3 class="text-lg font-bold mb-4">ONG Mãos que Ajudam</h3>
+                    <p class="text-neutral-400">Transformando vidas desde 2010.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li><a href="sobre.html" class="text-neutral-400 hover:text-white">Sobre Nós</a></li>
+                        <li><a href="projetos.html" class="text-neutral-400 hover:text-white">Projetos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Siga-nos</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="text-neutral-400 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <p class="text-neutral-400">contato@maosqueajudam.org</p>
+                </div>
+             </div>
+             <div class="mt-8 border-t border-neutral-700 pt-6 text-center text-neutral-500 text-sm">
+                <p>© 2025 ONG Mãos que Ajudam. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="hidden fixed inset-0 bg-neutral-900 bg-opacity-75 z-50 flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-neutral-500 hover:text-neutral-800 text-2xl">&times;</button>
+            <h3 class="text-h3 mb-4">Título do Modal</h3>
+            <p class="text-body mb-6">Este é o conteúdo do modal. Pode ser usado para alertas importantes, formulários de login ou mais informações.</p>
+            <div class="text-right">
+                <button class="bg-primary-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-primary-600">Ação Principal</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="hidden fixed bottom-5 right-5 bg-neutral-800 text-white py-3 px-5 rounded-lg shadow-lg z-50">
+        <p>Esta é uma notificação toast!</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

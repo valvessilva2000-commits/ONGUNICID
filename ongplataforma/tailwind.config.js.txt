@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}"], // Procura por classes do Tailwind em todos os arquivos HTML e JS
+  theme: {
+    extend: {
+      // 1.1: Paleta de Cores (8+ cores)
+      colors: {
+        'primary': {
+          '50': '#f0f9ff',
+          '100': '#e0f2fe',
+          '200': '#bae6fd',
+          '300': '#7dd3fc',
+          '400': '#38bdf8',
+          '500': '#0ea5e9', // Cor primária principal
+          '600': '#0284c7',
+          '700': '#0369a1',
+          '800': '#075985',
+          '900': '#0c4a6e',
+        },
+        'secondary': {
+          '500': '#f59e0b', // Cor secundária principal
+          '600': '#d97706',
+        },
+        'neutral': {
+          '50': '#f8fafc',
+          '100': '#f1f5f9',
+          '200': '#e2e8f0',
+          '300': '#cbd5e1',
+          '400': '#94a3b8',
+          '500': '#64748b',
+          '600': '#475569',
+          '700': '#334155', // Cor de texto principal
+          '800': '#1e293b',
+          '900': '#0f172a', // Cor de fundo do rodapé
+        },
+        'feedback': {
+            'success': '#10b981',
+            'error': '#ef4444',
+            'warning': '#f97316',
+        }
+      },
+      // 1.2: Tipografia Hierárquica (5+ tamanhos)
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['3.75rem', { lineHeight: '1.1', fontWeight: '700' }], // 60px
+        'h2': ['2.25rem', { lineHeight: '1.2', fontWeight: '700' }], // 36px
+        'h3': ['1.5rem', { lineHeight: '1.3', fontWeight: '600' }], // 24px
+        'h4': ['1.125rem', { lineHeight: '1.4', fontWeight: '600' }], // 18px
+        'body': ['1rem', { lineHeight: '1.6', fontWeight: '400' }],     // 16px
+        'small': ['0.875rem', { lineHeight: '1.5', fontWeight: '400' }], // 14px
+      },
+      // 1.3: Sistema de Espaçamento Modular (Já é o padrão do Tailwind)
+      // O Tailwind usa uma escala de 4px por padrão.
+      // 8px = spacing-2, 16px = spacing-4, 24px = spacing-6, etc.
+      // Não é necessário adicionar nada aqui, apenas usar as classes existentes.
+
+      // 1.4: Breakpoints Responsivos (5 breakpoints padrão do Tailwind)
+      // sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px
+      // Também já está configurado.
+    },
+  },
+  plugins: [],
+}
