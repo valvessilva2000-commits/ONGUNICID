@@ -1,0 +1,93 @@
+<section class="hero-bg bg-cover bg-center text-white">
+    <div class="bg-black bg-opacity-50 min-h-[60vh] flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-h1 mb-4">Transformando Vidas, Construindo Futuros</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Junte-se a nós para levar esperança e oportunidade para comunidades carentes.</p>
+            <div>
+                <a href="/projetos" class="bg-primary-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-600 transition duration-300 text-lg mr-4">Nossos Projetos</a>
+                <a href="/voluntariado" class="bg-white text-primary-600 font-bold py-3 px-6 rounded-lg hover:bg-neutral-200 transition duration-300 text-lg">Seja Voluntário</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-h2 text-center text-neutral-800 mb-12">Projetos em Destaque</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="imagens/projeto.png" alt="Crianças em uma sala de aula sorrindo" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Educação</span>
+                    </div>
+                    <h3 class="text-h3 mb-2">Educação para Todos</h3>
+                    <p class="text-neutral-600 mb-4 flex-grow">Levamos reforço escolar e atividades culturais para crianças em áreas de vulnerabilidade social.</p>
+                    <a href="/projetos#educacao" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="imagens/projeto1.png" alt="Profissional de saúde atendendo uma criança" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                   <div class="mb-4">
+                        <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Saúde</span>
+                    </div>
+                    <h3 class="text-h3 mb-2">Saúde na Comunidade</h3>
+                    <p class="text-neutral-600 mb-4 flex-grow">Promovemos campanhas de vacinação e atendimento médico básico em locais de difícil acesso.</p>
+                    <a href="/projetos#saude" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+               <img src="imagens/projeto2.png" alt="Pessoa em um curso de geração de renda" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <span class="bg-primary-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Emprego</span>
+                    </div>
+                    <h3 class="text-h3 mb-2">Geração de Renda</h3>
+                    <p class="text-neutral-600 mb-4 flex-grow">Capacitamos adultos com cursos profissionalizantes para que possam empreender e prosperar.</p>
+                    <a href="/projetos#renda" class="text-primary-600 font-semibold hover:underline mt-auto">Saiba Mais →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-h2 text-center text-neutral-800 mb-12">Componentes de Interface</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-h3 mb-4">Botões com Estados</h3>
+                    <div class="flex items-center space-x-4">
+                       <button class="bg-primary-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-400 active:bg-primary-700">Padrão</button>
+                       <button class="bg-secondary-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-500">Secundário</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-h3 mb-4">Modal e Toast</h3>
+                    <div class="flex items-center space-x-4">
+                       <button id="open-modal-btn" class="bg-neutral-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-neutral-900">Abrir Modal</button>
+                       <button id="show-toast-btn" class="bg-neutral-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-neutral-900">Mostrar Toast</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                 <h3 class="text-h3 mb-4">Formulário com Validação</h3>
+                 <form action="#" class="bg-neutral-50 p-8 rounded-lg shadow-md space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-neutral-700 mb-1">Nome</label>
+                        <input type="text" id="name" required class="peer w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error">
+                        <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, preencha seu nome.</p>
+                    </div>
+                     <div>
+                        <label for="email" class="block text-sm font-medium text-neutral-700 mb-1">E-mail</label>
+                        <input type="email" id="email" required class="peer w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error">
+                        <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, insira um e-mail válido.</p>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-600 transition duration-300">Enviar</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+</section>

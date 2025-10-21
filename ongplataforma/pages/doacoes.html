@@ -1,0 +1,57 @@
+<div class="container mx-auto px-6 py-16">
+    <header class="text-center mb-16">
+        <h1 class="text-h1 text-neutral-800">Sua Doação Transforma</h1>
+        <p class="text-lg text-neutral-600 mt-4 max-w-3xl mx-auto">Cada contribuição, não importa o valor, nos ajuda a continuar nosso trabalho e a expandir nosso impacto.</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col">
+            <i class="fas fa-qrcode text-6xl text-primary-500 mb-4"></i>
+            <h2 class="text-h2 mb-2">Doe com PIX</h2>
+            <p class="text-neutral-600 mb-4 flex-grow">A forma mais rápida e segura de ajudar. Aponte a câmera do seu celular para o QR Code ou use nossa chave.</p>
+            <img src="imagens/qrcode.png" alt="QR Code para doação via PIX" class="mx-auto my-4 border-4 border-neutral-200 rounded-md w-48 h-48">
+            <p class="font-semibold text-small">Chave PIX (CNPJ):</p>
+            <div class="relative mt-2">
+                <input id="pix-key" type="text" value="12.345.678/0001-99" readonly class="text-center text-lg bg-neutral-100 p-2 rounded-md w-full border-none">
+                <button id="copy-pix-btn" class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded hover:bg-primary-600">COPIAR</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col">
+            <i class="fas fa-university text-6xl text-primary-500 mb-4"></i>
+            <h2 class="text-h2 mb-2">Transferência Bancária</h2>
+            <p class="text-neutral-600 mb-4 flex-grow">Você também pode doar diretamente para nossa conta bancária.</p>
+            <div class="text-left bg-neutral-100 p-4 rounded-md space-y-2 mt-auto">
+                <p><span class="font-semibold">Banco:</span> Banco Fictício S.A. (000)</p>
+                <p><span class="font-semibold">Agência:</span> 1234</p>
+                <p><span class="font-semibold">Conta Corrente:</span> 56789-0</p>
+                <p><span class="font-semibold">Nome:</span> ONG Mãos que Ajudam</p>
+                <p><span class="font-semibold">CNPJ:</span> 12.345.678/0001-99</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <h2 class="text-h2 text-center mb-12">Veja o Impacto da Sua Contribuição</h2>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center p-6 bg-primary-50 border border-primary-200 rounded-lg">
+                <h3 class="text-3xl font-bold text-primary-700">R$ 50</h3>
+                <p class="text-neutral-600 mt-2">Garante o material escolar completo para uma criança por um semestre.</p>
+            </div>
+            <div class="text-center p-6 bg-primary-50 border border-primary-200 rounded-lg">
+                <h3 class="text-3xl font-bold text-primary-700">R$ 100</h3>
+                <p class="text-neutral-600 mt-2">Fornece uma cesta básica para uma família em situação de necessidade.</p>
+            </div>
+            <div class="text-center p-6 bg-primary-50 border border-primary-200 rounded-lg">
+                <h3 class="text-3xl font-bold text-primary-700">R$ 250</h3>
+                <p class="text-neutral-600 mt-2">Custeia um mês de aulas de música para um jovem talento da comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center bg-white p-8 md:p-12 rounded-lg shadow-lg">
+        <h2 class="text-h2 mb-4">Outras Formas de Ajudar</h2>
+        <p class="text-neutral-600 mb-8 max-w-2xl mx-auto">Sua ajuda não precisa ser financeira. Aceitamos doações de alimentos, roupas, material escolar e brinquedos. Entre em contato para saber os pontos de coleta.</p>
+        <a href="#/contato" class="bg-secondary-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-secondary-600 transition duration-300">Fale Conosco</a>
+    </section>
+</div>
